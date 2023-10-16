@@ -15,5 +15,5 @@ sequenceDiagram
   server-->>browser: responds with js file
   deactivate server
   
-  Note left of browser: parse js that is returned and continue execution as the javascript manipulates the contents of the initial page
+  Note right of browser: parse js that is returned and continue execution as the javascript manipulates the contents of the initial page
 ```
