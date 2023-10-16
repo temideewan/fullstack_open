@@ -6,6 +6,7 @@ sequenceDiagram
   participant server
 
   browser->>server: Post request with new note content to new_note endpoint
+  activate server
   server-->browser: response with a URL redirect to location "notes"
   browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
   activate server
