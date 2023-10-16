@@ -7,7 +7,7 @@ sequenceDiagram
 
   Note right of browser: click event submits the post to the location of the form action
 
-  browser->>server: Post request with new note content to new_note endpoint
+  browser->>server: Post https://studies.cs.helsinki.fi/exampleapp/new_note
   activate server
   server-->browser: response with a URL redirect to location "notes"
   browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
